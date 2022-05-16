@@ -1,0 +1,26 @@
+doctype html
+html 
+    head 
+        title List User 
+        link(rel="stylesheet", href="stylesheets/user.css")
+
+    body 
+        div
+            table.pricetable
+                tr
+                    th last name
+                    th fist name 
+                    th email
+                    th passwork 
+                    th action
+                each item in users
+                    tr
+                        td= item.lastName
+                        td= item.firstName
+                        td= item.email
+                        td= item.email
+                        td
+                            a(href="/users/edit/" + item.id)
+                                button edit
+                            a(href="/users/delete/" + item.id)
+                                button delete      

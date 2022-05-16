@@ -1,0 +1,14 @@
+form(action=(user ? '/users/update/' + user.id : '/users/store' ), method="post")
+    label(for="firstname") Fist Name
+    input(type="text", id="firstname", name="firstname" value=(user ? user.firstName : ''))
+    br
+    label(for="lastname") LastName
+    input(type="text", id="lastname", name="lastname" value=(user ? user.lastName : ''))
+    br
+    label(for="email") Email
+    input(type="text", id="email" name="email" value=(user ? user.email : ''))
+    br
+    label(for="password") Password
+    input(type="password", id="password", name="password" value=(user ? user.password : ''))
+    br
+    button(type="submit") Submit
