@@ -1,0 +1,9 @@
+stages:
+  - build
+
+jobs:
+  - name: test
+    stage: build
+    image: alpine
+    script:
+      - echo hehe
