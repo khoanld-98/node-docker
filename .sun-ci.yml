@@ -7,3 +7,21 @@ jobs:
     image: alpine
     script:
       - echo hehe
+      
+  - name: viewlog
+    stage: build
+    image: sunasteriskrnd/php-workspace:7.4
+    script:
+    - echo hello
+    release:
+      environment: Production
+      url: https://example.com
+      
+  - name: viewlog
+    stage: build
+    image: sunasteriskrnd/php-workspace:7.4
+    script:
+    - echo hello
+    release:
+      environment: develop
+      url: https://example.com
