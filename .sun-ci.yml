@@ -17,7 +17,7 @@ jobs:
       environment: Production
       url: https://example.com
       
-  - name: viewlog
+  - name: viewlog1
     stage: build
     image: sunasteriskrnd/php-workspace:7.4
     script:
